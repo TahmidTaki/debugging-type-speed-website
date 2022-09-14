@@ -91,6 +91,14 @@
         <li>deleting an element inside an array, that index value would be undefined</li>
         <li>setting a value to undefined</li>
     </ul>
+
+    <h1>How event loop works (Simplified)</h1>
+    <p>JS stacks its sync functions in a stack. For call-back functions, each call-back is pushed on top of the stack.
+        When the execution of the top of stack function is finished, it is popped out and the next top function is
+        executed and it goes on like that until the stack it empty. if any async function/task is to be executed, that
+        task is inially kept in an queue, and it waits for the micro tasks in the stack to be finished. when the stack
+        is empty, the first task from the queue is pushed into the stack and that task is executed. after that, any
+        remaining queue elements are pushed into the stack one by one and gets executed.</p>
 </body>
 
 </html>
