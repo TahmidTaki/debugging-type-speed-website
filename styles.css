@@ -147,6 +147,11 @@ button {
   cursor: pointer;
 }
 
+/* .histories-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+} */
+
 #histories {
   display: flex;
   flex-wrap: wrap;
