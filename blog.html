@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs for assignment</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Difference between local storage and session storage</h1>
+    <p>The difference between localStorage and sessionStorage has to do with lifetime and scope: how long the data is
+        saved for and who the data is accessible to.
+    </p>
+    <table>
+        <tr>
+            <th>local storage</th>
+            <th>session storage</th>
+        </tr>
+
+        <tr>
+            <td>Session storage is destroyed once the user closes the browser</td>
+            <td>whereas, Local storage stores data with no expiration date.</td>
+        </tr>
+        <tr>
+            <td>The storage capacity of local storage is 5MB/10MB</td>
+            <td>The storage capacity of session storage is 5MB</td>
+        </tr>
+        <tr>
+            <td>As it is not session-based, it must be deleted via javascript or manually</td>
+            <td>It’s session-based and works per window or tab. This means that data is stored only for the duration of
+                a session, i.e., until the browser (or tab) is closed</td>
+        </tr>
+    </table>
+
+
+    <h1>difference between local scope and block scope</h1>
+    <p>Before ES6 (2015), JavaScript had only Global Scope and Function Scope. ES6 introduced two important new
+        JavaScript keywords: let and const.
+
+        These two keywords provide Block Scope in JavaScript.
+    </p>
+    <h3>Block Scope</h3>
+    <ol>
+        <li>Variables declared inside a { } block cannot be accessed from outside the block</li>
+        <li>Variables declared with the var keyword can NOT have block scope.</li>
+
+        <li> Variables declared inside a { } block can be accessed from outside the block.</li>
+    </ol>
+    <h3>Global Scope</h3>
+    <ol>
+        <li>Variables declared Globally (outside any function) have Global Scope.
+
+        </li>
+        <li>Global variables can be accessed from anywhere in a JavaScript program.
+
+        </li>
+        <li> Variables declared with var, let and const are quite similar when declared outside a block.</li>
+    </ol>
+
+
+    <h1>How many ways JS shows undefined</h1>
+    <ul>
+        <li>Variable with no value</li>
+        <li>variable has not been assigned a value</li>
+        <li>when calling a non-existent property of an object</li>
+        <li>when calling a non-existent method of an object</li>
+        <li>When passing less arguments in function call then, that parameter will have undefined value.</li>
+        <li>Funtion with no return value will give undefined</li>
+        <li>return statement with no return value, just writing --> return; </li>
+        <li>Array element outside index range</li>
+        <li>deleting an element inside an array, that index value would be undefined</li>
+        <li>setting a value to undefined</li>
+    </ul>
+</body>
+
+</html>
